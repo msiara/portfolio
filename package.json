@@ -1,0 +1,35 @@
+{
+  "author": "Mateusz Siara",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.8.0",
+    "gatsby": "^2.0.0",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-styled-components": "^3.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0",
+    "rebass": "^3.0.0-9",
+    "styled-components": "^4.0.0",
+    "styled-icons": "^3.3.0"
+  },
+  "description": "Portfolio",
+  "devDependencies": {
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "gatsby-plugin-eslint": "^2.0.1",
+    "gh-pages": "^2.0.1"
+  },
+  "license": "MIT",
+  "name": "portfolio",
+  "scripts": {
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "develop": "gatsby develop",
+    "lint": "eslint ./src",
+    "serve": "gatsby serve"
+  },
+  "version": "1.0.0"
+}
