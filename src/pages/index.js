@@ -1,9 +1,10 @@
 import { graphql } from 'gatsby';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import PropTypes from 'prop-types';
 import React, { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 import {
-  Box, Flex, Heading, Image, Link, Text,
+  Box, Flex, Heading, Image, Text,
 } from 'rebass';
 import { ThemeProvider } from 'styled-components';
 import { Envelope } from 'styled-icons/fa-solid';
@@ -40,13 +41,13 @@ const Index = ({ data }) => (
               {data.site.siteMetadata.fullName}
             </Heading>
             <Flex justifyContent="center" mb={16}>
-              <Link href={data.site.siteMetadata.links.mail}>
+              <OutboundLink href={data.site.siteMetadata.links.mail}>
                 <Button>
                   <Envelope size={16} />
                   {' '}
                   Contact me
                 </Button>
-              </Link>
+              </OutboundLink>
             </Flex>
             <Text mb={16} textAlign="center">
               {data.site.siteMetadata.profession}
@@ -56,13 +57,13 @@ const Index = ({ data }) => (
             </Text>
             <Flex justifyContent="center">
               <Box mr={32}>
-                <Link title="Github" href={data.site.siteMetadata.links.github}>
+                <OutboundLink title="Github" href={data.site.siteMetadata.links.github}>
                   <Github size={32} />
-                </Link>
+                </OutboundLink>
               </Box>
-              <Link title="LinkedIn" href={data.site.siteMetadata.links.linkedIn}>
+              <OutboundLink title="LinkedIn" href={data.site.siteMetadata.links.linkedIn}>
                 <LinkedIn size={32} />
-              </Link>
+              </OutboundLink>
             </Flex>
           </Box>
         </Panel>

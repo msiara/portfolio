@@ -2,6 +2,13 @@ module.exports = {
   pathPrefix: '/portfolio',
   plugins: [
     'gatsby-plugin-eslint',
+    {
+      options: {
+        head: false,
+        trackingId: 'UA-127729463-1',
+      },
+      resolve: 'gatsby-plugin-google-analytics',
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
   ],
